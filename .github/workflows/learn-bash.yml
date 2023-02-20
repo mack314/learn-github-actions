@@ -1,7 +1,8 @@
 name: learn-bash
 run-name: to learn bash 
 jobs:
-  name: learn bash
+  learn_bash
+  name: learn bash 
   runs-on: ubuntu-latest 
   steps: 
     - name: bash version 
