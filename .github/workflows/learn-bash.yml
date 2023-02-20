@@ -1,4 +1,5 @@
 name: learn-bash
+on: push
 run-name: to learn bash 
 jobs:
   learn_bash:
