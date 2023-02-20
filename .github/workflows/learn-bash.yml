@@ -1,0 +1,9 @@
+name: learn-bash
+run-name: to learn bash 
+jobs:
+  name: learn bash
+  runs-on: ubuntu-latest 
+  steps: 
+    - name: bash version 
+      run: bash --version  
+
