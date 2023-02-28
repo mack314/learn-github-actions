@@ -1,4 +1,4 @@
-name: learn-bash
+name: learn-bash-2
 on: push
 run-name: to learn bash 
 jobs:
