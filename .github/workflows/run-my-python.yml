@@ -28,7 +28,7 @@ jobs:
           
       - name: Install requirements
         run: |
-          pip install --upgrade --upgrade-strategy eager -r learn-python/requirements.txt -e .
+          pip install --upgrade --upgrade-strategy eager -r learn-python/requirements.txt
       - name: run my programme 
         run: python learn-python/hello-world.py
     
