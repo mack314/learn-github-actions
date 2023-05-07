@@ -1,5 +1,6 @@
 name: run-python
-on: workflow_dispatch
+on:
+  push
 run-name: to run python 
 jobs:
   run_python:
