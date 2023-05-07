@@ -18,9 +18,9 @@ jobs:
       - name: list files in git repo 
         run: ls -l 
       - name: Setup Python
-        uses: actions/setup-python@v1
+        uses: actions/setup-python@v4
         with:
-          python-version: 3.7
+          python-version: 3.9
       - uses: actions/cache@v2
         with:
           path: ~/.cache/pip
