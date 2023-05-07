@@ -1,5 +1,5 @@
 name: learn-bash-2
-on: push
+on: workflow_dispatch
 run-name: to learn bash 
 jobs:
   learn_bash:
