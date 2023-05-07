@@ -1,8 +1,5 @@
 name: run-python
-on: 
-   push:
-      paths-ignore:
-        - "learn-python/*"
+on: workflow_dispatch
 run-name: to run python 
 jobs:
   run_python:
@@ -21,7 +18,7 @@ jobs:
         with:
           python-version: '3.9'
           cache: 'pip' # caching pip dependencies
-      - run: pip install -r requirements.txt
+      - run: pip install -r learn-python/requirements.txt
       - name: run my programme 
         run: python learn-python/hello-world.py
     

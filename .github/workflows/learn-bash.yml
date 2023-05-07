@@ -3,7 +3,7 @@ on: push
 run-name: to learn bash 
 jobs:
   learn_bash:
-    name: learn-bash 
+    name: learn-bash
     # runs-on: custom-runner
     runs-on: custom-runner-set-1
     env: 
