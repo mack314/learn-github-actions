@@ -1,0 +1,27 @@
+name: run-python
+on: 
+   push:
+      paths-ignore:
+        - "learn-python/*"
+run-name: to run python 
+jobs:
+  run_python:
+    name: run-python 
+    # runs-on: custom-runner
+    runs-on: custom-runner-set-1
+    env: 
+      name: mack
+    steps: 
+      - name: bash version 
+        run: bash --version  
+      - name: print my name 
+        run: echo $name
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+          cache: 'pip' # caching pip dependencies
+      - run: pip install -r requirements.txt
+      - name: run my programme 
+        run: python learn-python/hello-world.py
+    
